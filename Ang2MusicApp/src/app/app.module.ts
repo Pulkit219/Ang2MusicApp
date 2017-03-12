@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { routes } from './app.routes';
 import { provideRoutes} from '@angular/router';
 
@@ -9,6 +8,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { SearchComponent } from './components/search/search.component';
+import { MusicService } from './services/music.service';
+import 'rxjs/Rx';
+import { HttpModule, RequestOptions,Http } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,7 @@ import { SearchComponent } from './components/search/search.component';
     HttpModule,
     routes
   ],
-  providers: [],
+  providers: [MusicService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
