@@ -13,13 +13,15 @@ import { SearchComponent } from './components/search/search.component';
 import { MusicService } from './services/music.service';
 // import 'rxjs/Rx';
 import { HttpModule, RequestOptions,Http } from '@angular/http';
+import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AboutComponent,
-    SearchComponent
+    SearchComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
