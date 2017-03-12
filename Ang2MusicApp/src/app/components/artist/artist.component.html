@@ -1,3 +1,11 @@
-<p>
-  artist works!
-</p>
+<div *ngIf="artist">
+ <header class="artist-header">
+   <div *ngIf="artist.images.length > 0">
+     <img class="artist-thumb img-circle" src="{{artist.images[0].url}}">
+
+
+   </div>
+
+ </header>
+
+</div>
