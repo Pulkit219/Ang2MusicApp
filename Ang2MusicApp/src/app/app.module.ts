@@ -14,6 +14,7 @@ import { MusicService } from './services/music.service';
 // import 'rxjs/Rx';
 import { HttpModule, RequestOptions,Http } from '@angular/http';
 import { ArtistComponent } from './components/artist/artist.component';
+import { AlbumComponent } from './components/album/album.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ArtistComponent } from './components/artist/artist.component';
     NavbarComponent,
     AboutComponent,
     SearchComponent,
-    ArtistComponent
+    ArtistComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,

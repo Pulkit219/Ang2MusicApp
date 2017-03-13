@@ -30,12 +30,16 @@ albums: Album[];
   .subscribe(artist => {
     this.artist = artist;
   })
-})
-
-this._musicService.getAlbum(id)
+  this._musicService.getAlbums(id)
   .subscribe(albums => {
     this.albums = albums.items;
   })
+
+
+
+})
+
+
   }
 
 }
