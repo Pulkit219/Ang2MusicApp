@@ -13,6 +13,7 @@ import 'rxjs/add/operator/switchMap';
 export class ArtistComponent implements OnInit {
 
 id:string;
+albumId:string;
 artist:Artist[];
 albums: Album[];
 
@@ -30,6 +31,11 @@ albums: Album[];
     this.artist = artist;
   })
 })
+
+this._musicService.getAlbum(id)
+  .subscribe(albums => {
+    this.albums = albums.items;
+  })
   }
 
 }
