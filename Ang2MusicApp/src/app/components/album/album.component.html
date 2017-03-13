@@ -18,4 +18,16 @@
     </div>
   </header>
 
+  <div class="album-tracks">
+    <h2> Album Tracks</h2>
+    <div *ngFor ="let track of album.tracks.items">
+      <div class="well">
+        <h5>{{track.track_number}}-{{track.name}}</h5>
+        <a href ="{{track.preview_url}}" target="blank">Preview Track</a>
+      </div>
+    </div>
+
+
+  </div>
+
 </div>
